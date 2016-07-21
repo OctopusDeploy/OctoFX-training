@@ -1,0 +1,16 @@
+<package>
+  <metadata>
+    <id>ZXY.OctoFX.TradingWebsite</id>
+    <version>1.0.0.6</version>
+    <authors>ness</authors>
+    <owners>ness</owners>
+    <licenseUrl>http://example.com</licenseUrl>
+    <projectUrl>http://example.com</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The OctoFX.TradingWebsite deployment package, built on 31/07/2014</description>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+  <file src="bin\test\*.*" target="bin\test" />
+  </files>
+</package>
