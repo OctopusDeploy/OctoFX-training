@@ -1,8 +1,6 @@
 ﻿using NUnit.Framework;
 using OctoFX.Core.Model;
 using TestStack.BDDfy;
-using TestStack.BDDfy.Core;
-using TestStack.BDDfy.Scanners.StepScanners.Fluent;
 
 namespace OctoFX.Tests.OctoFX.Core.Model
 {

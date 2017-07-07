@@ -17,7 +17,7 @@ namespace OctoFX.SmokeTests
         {
             var responseText = new WebClient().DownloadString(ConfigurationManager.AppSettings["endpoint"]);
 
-            Assert.That(responseText, Is.StringContaining("OctoFX makes it easy to buy and sell"));
+            Assert.That(responseText, Does.Contain("OctoFX makes it easy to buy and sell"));
         }
     }
 }
