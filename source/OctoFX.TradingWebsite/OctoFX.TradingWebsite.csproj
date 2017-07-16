@@ -327,6 +327,11 @@
       <Project>{9316AE68-1295-4A98-9C84-DCF136B9F10B}</Project>
       <Name>OctoFX.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OctoFX.Tests\OctoFX.Tests.csproj">
+      <Project>{6e77b735-90f7-41be-b764-f5acc39843c9}</Project>
+      <Name>OctoFX.Tests</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -358,7 +363,7 @@
   </ProjectExtensions>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y /I  "$(SolutionDir)OctoFX.Tests\bin\Debug\*" "$(TargetDir)test"</PostBuildEvent>
+    <PostBuildEvent>xcopy /y /I  "$(SolutionDir)OctoFX.Tests\bin\$(Configuration)\*" "$(TargetDir)test"</PostBuildEvent>
   </PropertyGroup>
   <Import Project="..\packages\OctoPack.3.6.1\build\OctoPack.targets" Condition="Exists('..\packages\OctoPack.3.6.1\build\OctoPack.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
